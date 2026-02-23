@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <main class="flex justify-center">
+      <div class="mockup-phone">
+        <div class="mockup-phone-camera"></div>
+        <div
+          class="mockup-phone-display text-white bg-slate-500 grid place-content-center"
+        >
+          <!--Available balance-->
+          <div class="bg-white">
+         
+              <div class="stat">
+                <div id="balance" class="stat-value text-black">89,400</div>
+                <div class="stat-desc">Available Balance</div>
+              </div>
+            </div>
+            <div class="divider"></div>
+            <!--user action button-->
+            <div>
+                <button id="show_addMoney" class="btn btn-lg">Add money</button>
+                <button id="show_cashOut" class="btn btn-lg">Cash out</button>
+                <button class="btn btn-lg">Pay bill</button>
+                <button class="btn btn-lg">Transaction</button>
+                <button class="btn btn-lg">Bonus </button>
+                <button class="btn btn-lg">Transfer Money</button>
+            </div>
+            <div class="divider"></div>
+            <!--Add money form start-->
+            <div>
+                <form id="addMoney_form" class=" card-body bg-white">
+                    <div class="form-control">
+                      <label class="label">
+                        <span class="label-text text-black">Amount to ADD</span>
+                      </label>
+                      <input id="inputAddMoney" class="text-black"
+                        id="phone_number"
+                        type="text"
+                        placeholder="Amount you want to add"
+                        class="input input-bordered"
+                        required
+                      />
+                    </div>
+                    <div class="form-control ">
+                      <label class="label">
+                        <span class="label-text text-black">Pin Number</span>
+                      </label>
+                      <input id="inputPin" class="text-black"
+                        id="pin_number"
+                        type="password"
+                        placeholder=" Enter 4 digit Pin number"
+                        class="input input-bordered"
+                        autocomplete="off"
+                        required
+                      />
+                     
+                    </div>
+                    <div class="form-control mt-6">
+                      <button id="btn_addMoney" class="btn btn-primary">
+                        Add Money
+                      </button>
+                    </div>
+                  </form>
+            </div>
+             <!--Add money form end-->
+             <!-- cash out form start-->
+             <div>
+              <form id="cashOut_form" class="hidden card-body bg-white">
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text text-black">Cash Out Amount</span>
+                    </label>
+                    <input id="inputCashOut" class="text-black"
+                      id="phone_number"
+                      type="text"
+                      placeholder="Amount you want to add"
+                      class="input input-bordered"
+                      required
+                    />
+                  </div>
+                  <div class="form-control ">
+                    <label class="label">
+                      <span class="label-text text-black">Pin Number</span>
+                    </label>
+                    <input id="cashOutPin" class="text-black"
+                      id="pin_number"
+                      type="password"
+                      placeholder=" Enter 4 digit Pin number"
+                      class="input input-bordered"
+                      autocomplete="off"
+                      required
+                    />
+                   
+                  </div>
+                  <div class="form-control mt-6">
+                    <button id="btn_CashOut" class="btn btn-primary">
+                      Cash out
+                    </button>
+                  </div>
+                </form>
+          </div>
+             <!-- cash out form end-->
+
+
+           
+          </div>
+        </div>
+      </div>
+    </main>
+    <!--     <script src="js/home.js"></script>
+              <script src="js/addMoney.js"></script>
+              
+
+       
+    -->
+              <script src="js/utilities.js"></script>
+    <script src="js/addMoneyExc.js"></script>
+    <script src="js/cashout.js"></script>
+    <script src="js/features.js"></script>
+  
+  </body>
+</html>

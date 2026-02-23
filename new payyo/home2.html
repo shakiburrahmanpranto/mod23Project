@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <main class="flex justify-center">
+      <div class="mockup-phone bg-white">
+        <div class="mockup-phone-camera"></div>
+        <div class="mockup-phone-display text-white grid place-content-center">
+          <!--Account balance-->
+          <div class="stats shadow bg-slate-400">
+            <div class="stat">
+              <div class="stat-title text-2xl text-black">Account Balance</div>
+              <div id="balance" class="stat-value text-black">89400</div>
+            </div>
+          </div>
+
+          <!--Account balance-->
+          <div class="divider"></div>
+
+          <!--feature section-->
+          <div>
+            <button id="show_add_Money_form" class="btn btn-lg">
+              Add Money
+            </button>
+            <button id="show_cash_out_form" class="btn btn-lg">Cash out</button>
+            <button id="show_transaction" class="btn btn-lg">
+              Transaction
+            </button>
+          </div>
+
+          <!--feature section-->
+          <div class="divider"></div>
+          <!--Add money form start-->
+          <div
+            id="add_money_form"
+            class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl"
+          >
+            <div class="card-body">
+              <fieldset class="fieldset">
+                <label class="fieldset-label">Add money amount</label>
+                <input
+                  id="input_addMoney"
+                  type="email"
+                  class="input text-black"
+                  placeholder="Add money amount "
+                />
+                <label class="fieldset-label">Pin</label>
+                <input
+                  id="pin"
+                  type="password"
+                  class="input text-black"
+                  placeholder="Pin"
+                  autocomplete="off"
+                />
+
+                <button id="btn_addMoney" class="btn btn-neutral mt-4">
+                  Add Money
+                </button>
+              </fieldset>
+            </div>
+          </div>
+          <!--Add money form end-->
+
+          <!-- cash out form start-->
+
+          <div
+            id="cash_out_form"
+            class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl"
+          >
+            <div class="card-body">
+              <fieldset class="fieldset">
+                <label class="fieldset-label">Cashout money amount</label>
+                <input
+                  id="input_cashout"
+                  type="email"
+                  class="input text-black"
+                  placeholder="Cashout money amount "
+                />
+                <label class="fieldset-label">Pin</label>
+                <input
+                  id="cashout_pin"
+                  type="password"
+                  class="input text-black"
+                  placeholder="Pin"
+                  autocomplete="off"
+                />
+
+                <button id="btn_cashout" class="btn btn-neutral mt-4">
+                  Cash Out
+                </button>
+              </fieldset>
+            </div>
+          </div>
+
+          <!-- cash out form end-->
+          <div class="divider"></div>
+          <!--transaction start-->
+          <div id="transaction_form" class="hidden">
+            <h2 class="text-2xl text-center text-black">Transaction history</h2>
+            <div
+              id="transaction_container"
+              class="text-green-700 space-y-2"
+            ></div>
+          </div>
+
+          <!--transaction end-->
+        </div>
+      </div>
+
+      <!--script section-->
+
+      <!--<script src="js/addmoney2.js"></script> 
+         <script src="js/addMoney3.js"></script>
+         script src="js/utilities.js"></script>
+         -->
+      <script src="js/utilities2.js"></script>
+      <script src="js/addMoney4.js"></script>
+      <script src="js/cashout.js"></script>
+      <script src="js/features.js"></script>
+
+      <!--script section-->
+    </main>
+  </body>
+</html>

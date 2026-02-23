@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <main class="flex justify-center">
+      <div class="mockup-phone bg-white">
+        <div class="mockup-phone-camera"></div>
+        <div class="mockup-phone-display text-white grid place-content-center">
+          <!--Account balance-->
+          <div class="stats shadow bg-slate-400">
+            <div class="stat">
+              <div class="stat-title text-2xl text-black">Account Balance</div>
+              <div id="balance" class="stat-value text-black">89,400</div>
+            </div>
+          </div>
+
+          <!--Account balance--> 
+           <div class="divider"></div>
+           
+<!--Add money form start-->
+<div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+    <div class="card-body">
+      <fieldset class="fieldset">
+        <label class="fieldset-label">Add money amount</label>
+        <input id="input_addMoney" type="email" class="input text-black" placeholder="Add money amount " />
+        <label class="fieldset-label">Pin</label>
+        <input id="pin" type="password" class="input text-black" placeholder="Pin" />
+   
+        <button id="btn_addMoney" class="btn btn-neutral mt-4">Add Money</button>
+      </fieldset>
+    </div>
+<!--Add money form end-->
+
+
+
+        </div>
+      </div>
+      <!--script section-->
+<script src="js/addmoney.js"></script>
+
+
+
+      <!--script section-->
+    </main>
+  </body>
+</html>
